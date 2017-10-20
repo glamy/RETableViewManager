@@ -79,7 +79,7 @@
 - (void)cellDidLoad
 {
     self.loaded = YES;
-    self.actionBar = [[REActionBar alloc] initWithDelegate:self];
+//    self.actionBar = [[REActionBar alloc] initWithDelegate:self];
     self.selectionStyle = self.tableViewManager.style.defaultCellSelectionStyle;
     
     if ([self.tableViewManager.style hasCustomBackgroundImage]) {
@@ -93,7 +93,7 @@
 
 - (void)cellWillAppear
 {
-    [self updateActionBarNavigationControl];
+//    [self updateActionBarNavigationControl];
     self.selectionStyle = self.section.style.defaultCellSelectionStyle;
     
     if ([self.item isKindOfClass:[NSString class]]) {
