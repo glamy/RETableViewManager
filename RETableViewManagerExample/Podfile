@@ -1,2 +1,3 @@
-platform :ios, '7.0'
-pod 'RETableViewManager', :path => '../'
+target 'RETableViewManagerExample' do
+	pod 'RETableViewManager', :path => '../'
+end

@@ -42,7 +42,7 @@
 {
     [super viewDidLoad];
     self.title = @"Controls";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Values" style:UIBarButtonItemStyleBordered target:self action:@selector(valuesButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Values" style:UIBarButtonItemStylePlain target:self action:@selector(valuesButtonPressed:)];
     
     // Create manager
     //
@@ -90,7 +90,7 @@
     self.fullLengthFieldItem = [RETextItem itemWithTitle:nil value:nil placeholder:@"Full length text field"];    
     self.textItem = [RETextItem itemWithTitle:@"Text item" value:nil placeholder:@"Text"];
     self.numberItem = [RENumberItem itemWithTitle:@"Phone" value:@"" placeholder:@"(123) 456-7890" format:@"(XXX) XXX-XXXX"];
-    self.numberItem.onEndEditing = ^(RENumberItem *item){
+    self.numberItem.onEndEditing = ^(RETextItem *item){
         NSLog(@"Value: %@", item.value);
     };
     self.passwordItem = [RETextItem itemWithTitle:@"Password" value:nil placeholder:@"Password item"];

@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     self.title = @"Controls";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Validate" style:UIBarButtonItemStyleBordered target:self action:@selector(validateButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Validate" style:UIBarButtonItemStylePlain target:self action:@selector(validateButtonPressed:)];
     
     // Create manager
     //
