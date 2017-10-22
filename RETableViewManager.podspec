@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name        = 'RETableViewManager'
-  s.version     = '1.7'
+  s.version     = '1.7.2'
   s.authors     = { 'Roman Efimov' => 'romefimov@gmail.com' }
-  s.homepage    = 'https://github.com/romaonthego/RETableViewManager'
-  s.summary     = 'Powerful data driven content manager for UITableView.'
-  s.source      = { :git => 'https://github.com/romaonthego/RETableViewManager.git',
+  s.homepage    = 'https://github.com/glamy/RETableViewManager'
+  s.summary     = 'Powerful data driven content manager for UITableView. Forked from https://github.com/romaonthego/RETableViewManager'
+  s.source      = { :git => 'https://github.com/glamy/RETableViewManager.git',
                     :tag => s.version.to_s }
   s.license     = { :type => "MIT", :file => "LICENSE" }
 

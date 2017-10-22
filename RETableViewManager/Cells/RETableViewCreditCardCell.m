@@ -69,7 +69,7 @@ static inline BOOL RECreditCardExpired(NSString *creditCardExpirationDate)
     dateFormatter.dateFormat = @"MM/yy";
     NSDate *cardDate = [dateFormatter dateFromString:creditCardExpirationDate];
     
-    NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:[NSDate date]];
+    NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[NSDate date]];
     dateComponents.day = 1;
     NSDate *firstDayOfMonthDate = [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
 
