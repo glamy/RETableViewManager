@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name        = 'RETableViewManager'
-  s.version     = '1.7.2'
+  s.name        = 'GL_RETableViewManager'
+  s.version     = '2.0.0'
   s.authors     = { 'Roman Efimov' => 'romefimov@gmail.com' }
   s.homepage    = 'https://github.com/glamy/RETableViewManager'
   s.summary     = 'Powerful data driven content manager for UITableView. Forked from https://github.com/romaonthego/RETableViewManager'
